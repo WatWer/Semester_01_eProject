@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTJ_SS3_sign</title>
+    <style>
+        table{
+            border-color: teal;
+            border-style: double;
+            border-width: 5px;
+            margin:50px auto;
+            /* là canh giữa trái phải và trên dưới là 10px */
+        }
+        input{
+            border-color: orange;
+        }
+        button{
+            border-radius: 8px;
+            text-align:center;
+            padding:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="showInfo()">
+        <div>
+            <table>
+                <tr>
+                    <td colspan="2" class="div1" style="text-align: center; background-color: orange;
+                             color:white"><b>INFOMATION</b> </td>
+                </tr>
+                <tr>
+                    <td> <label for="user">Fulname</label></td>
+                    <td><input type="text" id="name"> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="gender" id="gender" >Gender</label> </td>
+                    <td> <input type="radio" class="gender" name="gender" value="Male">Male
+                         <input type="radio" class="gender" name="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="hobbies" id="hobbies" >Hobbies</label> </td>
+                    <td> <input type="checkbox" class="hobbies" value="Shopping">Shopping
+                        <input type="checkbox" class="hobbies" value="Eating out">Eating out
+                        <input type="checkbox" class="hobbies" value="Sporting">Sporting</td>
+                </tr>
+                <tr> 
+                    <td><label for="birth" id="birth" >Date of birth</label></td>
+                    <td><input class="input" type="date" id="birthday"></td>
+                </tr>
+                <tr> 
+                    <td><label for="city" id="city" >City</label></td>
+                    <td><select id="myselect"  >
+                            <option value="HCM">HCM</option> 
+                            <option value="HN" >HN</option> 
+                            <option value="HUE">HUE</option> 
+                        </select>
+                    <td>
+                </tr>
+                <tr>
+                    <td><button class="button" >Submit</button>
+                    <button name='reset' type="reset" value='Reset'>Reset</button>
+                </tr>
+                <tr>
+                    <td><label> Your infomation </label></td>
+                    <td style="border: solid; width:300px; height: 150px; "><span id="info"></span></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+        function showInfo(){
+            event.preventDefault(); 
+            // preventDefault là ngăn ko cho dữ liệu bị mất đi khi nhập vào 
+            var name=$("#name").val();
+
+            var gender=$(".gender:checked") ;
+            var genderArr=new Array();
+                if(gender.length>0)
+                {
+                    gender.each(function()
+                    {
+                        genderArr.push($(this).val());
+                    });
+                }
+
+                var hobbies=$(".hobbies:checked") ;
+                var hobbiesArr=new Array();
+               
+                if(hobbies.length>0)
+                {
+                    hobbies.each(function()
+                    {
+                        hobbiesArr.push($(this).val());
+                    });
+                } 
+
+            var birth=$("#birthday").val();
+            var city = $("#myselect option:selected").val();
+
+            $("#info").html("Name: " + name+"<br>Gender: "+genderArr+"<br>Hobbies: "+hobbiesArr+
+                    "<br>Date of Birth:"+birth+ "<br>City:"+city)
+        }
+    </script>
+</body>
+</html>
