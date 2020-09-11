@@ -1,0 +1,15 @@
+.carousel-inner img
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-item
+{
+    width: 100%;
+}
+
+.center-home
+{
+    font-size: 180%;
+}
