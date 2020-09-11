@@ -4,12 +4,24 @@
     margin: 0 auto;
 }
 
-.nav-item
-{
-    width: 100%;
-}
-
 .center-home
 {
     font-size: 180%;
+}
+
+.bodyBanner01
+{
+    border: solid 2px blue;
+    margin: 10px 0px 0px;
+    height: 30%;
+    float: left;
+    display: block;
+}
+
+.bodyBanner02
+{
+    border: solid 2px blue;
+    margin: 10px 0px 0px;
+    height: 30%;
+    float: right;
 }
