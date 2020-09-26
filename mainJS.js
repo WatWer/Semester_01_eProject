@@ -6,12 +6,20 @@ function ticketName()
 
     sessionStorage.dateIn = date.value;
 
-    sessionStorage.aduTick = adultTick.value;
-    sessionStorage.numTickAdu = numTickAdult.value;
+    sessionStorage.aduTickDoor = adultTickDoor.value;
+    sessionStorage.numTickAduDoor = numTickAdultDoor.value;
+
+    sessionStorage.aduTickGame = adultTickGame.value;
+    sessionStorage.numTickAduGame = numTickAdultGame.value;
+
     sessionStorage.toAdult = totalAdult.value;
 
-    sessionStorage.chiTick = childTick.value;
-    sessionStorage.numTickChi = numTickChild.value;
+    sessionStorage.chiTickDoor = childTickDoor.value;
+    sessionStorage.numTickChiDoor = numTickChildDoor.value;
+
+    sessionStorage.chiTickGame = childTickGame.value;
+    sessionStorage.numTickChiGame = numTickChildGame.value;
+
     sessionStorage.toChild = totalChild.value;
 
     sessionStorage.total = price.value;
@@ -48,11 +56,31 @@ function showInfo()
 
     if(tick == sessionStorage.ticketCode)
     {
-        document.write(sessionStorage.fiName);
+        document.getElementById("info").innerHTML = 
+        "Mr. / Mrs. " + sessionStorage.fiName + " " + sessionStorage.laName + "<br>" +
+        "Email: " + sessionStorage.email + "<br><br>" +
+
+        "Date of Entry: " + sessionStorage.dateIn + "<br><br>" +
+
+        "Adult - Door Pass: " + sessionStorage.numTickAduDoor + "<br>" +
+        "Adult - Game Pass: " + sessionStorage.numTickAduGame + "<br>" +
+        "Cost: $" + sessionStorage.toAdult + "<br><br>" +
+
+        "Child - Door Pass: " + sessionStorage.numTickChiDoor + "<br>" +
+        "Child - Game Pass: " + sessionStorage.numTickChiGame + "<br>" +
+        "Cost: $" + sessionStorage.toChild + "<br><br>" +
+
+        "Total: $" + sessionStorage.total;
     }
     else if(tick == 20140404)
-    {
-        document.write("ha");
-    }
+        document.getElementById("info").innerHTML = "Abdul";
+    else
+        document.getElementById("info").innerHTML = "Invalid Ticket Reference #";
+}
 
+function ticketGenerate02()
+{
+    document.getElementById("board").innerHTML = 123;
+
+    sessionStorage.ticketCode = Math.floor((Math.random() * 9999) + 20200000);
 }
