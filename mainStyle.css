@@ -1,3 +1,13 @@
+html, body
+{
+    overflow-x: hidden;
+}
+
+body
+{
+    position: relative
+}
+
 .carousel-inner img
 {
     width: 100%;
@@ -9,19 +19,55 @@
     font-size: 180%;
 }
 
-.bodyBanner01
+.container-fluid
 {
-    border: solid 2px blue;
-    margin: 10px 0px 0px;
-    height: 30%;
-    float: left;
-    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
 }
 
-.bodyBanner02
+.navbar
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.bodyBanner
 {
     border: solid 2px blue;
-    margin: 10px 0px 0px;
-    height: 30%;
-    float: right;
+    margin: 15px 0px 0px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bannerText{
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formHead
+{
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: mediumturquoise;
+    padding-top: none;
+    height: 50px;
+}
+
+.formBorder
+{
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+}
+
+.row
+{
+    padding-bottom: 2px;
 }
