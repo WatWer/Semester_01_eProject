@@ -1,4 +1,4 @@
-html, body
+/*html, body
 {
     overflow-x: hidden;
 }
@@ -6,7 +6,7 @@ html, body
 body
 {
     position: relative
-}
+}*/
 
 .carousel-inner img
 {
