@@ -1,86 +1,73 @@
-function ticketName()
+html, body
 {
-    sessionStorage.fiName = firstName.value;
-    sessionStorage.laName = lastName.value;
-    sessionStorage.email = email.value;
-
-    sessionStorage.dateIn = date.value;
-
-    sessionStorage.aduTickDoor = adultTickDoor.value;
-    sessionStorage.numTickAduDoor = numTickAdultDoor.value;
-
-    sessionStorage.aduTickGame = adultTickGame.value;
-    sessionStorage.numTickAduGame = numTickAdultGame.value;
-
-    sessionStorage.toAdult = totalAdult.value;
-
-    sessionStorage.chiTickDoor = childTickDoor.value;
-    sessionStorage.numTickChiDoor = numTickChildDoor.value;
-
-    sessionStorage.chiTickGame = childTickGame.value;
-    sessionStorage.numTickChiGame = numTickChildGame.value;
-
-    sessionStorage.toChild = totalChild.value;
-
-    sessionStorage.total = price.value;
+    overflow-x: hidden;
 }
 
-function cardName()
+body
 {
-    var payment = document.getElementsByName("pay");
-
-    payment02 = new Array();
-    for(var i=0; i<payment.length; i++)
-    {
-        if (payment[i].checked)
-        {
-            payment02.push(payment[i].value);
-        }
-    }
-
-    sessionStorage.payChoice = payment02;
-
-    sessionStorage.caNum = cardNum.value;
-
-    sessionStorage.caExpire = cardExpire.value;
+    position: relative
 }
 
-function ticketGenerate()
+.carousel-inner img
 {
-    sessionStorage.ticketCode = Math.floor((Math.random() * 9999) + 20200000);
+    width: 100%;
+    margin: 0 auto;
 }
 
-function showInfo()
+.center-home
 {
-    var tick = ticket.value;
-
-    if(tick == sessionStorage.ticketCode)
-    {
-        document.getElementById("info").innerHTML = 
-        "Mr. / Mrs. " + sessionStorage.fiName + " " + sessionStorage.laName + "<br>" +
-        "Email: " + sessionStorage.email + "<br><br>" +
-
-        "Date of Entry: " + sessionStorage.dateIn + "<br><br>" +
-
-        "Adult - Door Pass: " + sessionStorage.numTickAduDoor + "<br>" +
-        "Adult - Game Pass: " + sessionStorage.numTickAduGame + "<br>" +
-        "Cost: $" + sessionStorage.toAdult + "<br><br>" +
-
-        "Child - Door Pass: " + sessionStorage.numTickChiDoor + "<br>" +
-        "Child - Game Pass: " + sessionStorage.numTickChiGame + "<br>" +
-        "Cost: $" + sessionStorage.toChild + "<br><br>" +
-
-        "Total: $" + sessionStorage.total;
-    }
-    else if(tick == 20140404)
-        document.getElementById("info").innerHTML = "Abdul";
-    else
-        document.getElementById("info").innerHTML = "Invalid Ticket Reference #";
+    font-size: 180%;
 }
 
-function ticketGenerate02()
+.container-fluid
 {
-    document.getElementById("board").innerHTML = 123;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
 
-    sessionStorage.ticketCode = Math.floor((Math.random() * 9999) + 20200000);
+.navbar
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.bodyBanner
+{
+    border: solid 2px blue;
+    margin: 15px 0px 0px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bannerText{
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formHead
+{
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: mediumturquoise;
+    padding-top: none;
+    height: 50px;
+}
+
+.formBorder
+{
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+}
+
+.row
+{
+    padding-bottom: 2px;
 }
