@@ -1,28 +1,36 @@
 function ticketName()
 {
-    sessionStorage.fiName = firstName.value;
-    sessionStorage.laName = lastName.value;
-    sessionStorage.email = email.value;
+    if(price.value > 0)
+    {
+        sessionStorage.fiName = firstName.value;
+        sessionStorage.laName = lastName.value;
+        sessionStorage.email = email.value;
 
-    sessionStorage.dateIn = date.value;
+        sessionStorage.dateIn = date.value;
 
-    sessionStorage.aduTickDoor = adultTickDoor.value;
-    sessionStorage.numTickAduDoor = numTickAdultDoor.value;
+        sessionStorage.aduTickDoor = adultTickDoor.value;
+        sessionStorage.numTickAduDoor = numTickAdultDoor.value;
 
-    sessionStorage.aduTickGame = adultTickGame.value;
-    sessionStorage.numTickAduGame = numTickAdultGame.value;
+        sessionStorage.aduTickGame = adultTickGame.value;
+        sessionStorage.numTickAduGame = numTickAdultGame.value;
 
-    sessionStorage.toAdult = totalAdult.value;
+        sessionStorage.toAdult = totalAdult.value;
 
-    sessionStorage.chiTickDoor = childTickDoor.value;
-    sessionStorage.numTickChiDoor = numTickChildDoor.value;
+        sessionStorage.chiTickDoor = childTickDoor.value;
+        sessionStorage.numTickChiDoor = numTickChildDoor.value;
 
-    sessionStorage.chiTickGame = childTickGame.value;
-    sessionStorage.numTickChiGame = numTickChildGame.value;
+        sessionStorage.chiTickGame = childTickGame.value;
+        sessionStorage.numTickChiGame = numTickChildGame.value;
 
-    sessionStorage.toChild = totalChild.value;
+        sessionStorage.toChild = totalChild.value;
 
-    sessionStorage.total = price.value;
+        sessionStorage.total = price.value;
+    }
+    else
+    {
+        event.preventDefault();
+        alert("Please purchase at least 1 ticket." + "\n" + "Thank you.");
+    }
 }
 
 function cardName()
@@ -56,12 +64,13 @@ function showInfo()
 
     if(tick == sessionStorage.ticketCode)
     {
-        document.getElementById("info").innerHTML = 
+        document.getElementById("info01").innerHTML = 
         "Mr. / Mrs. " + sessionStorage.fiName + " " + sessionStorage.laName + "<br>" +
         "Email: " + sessionStorage.email + "<br><br>" +
 
-        "Date of Entry: " + sessionStorage.dateIn + "<br><br>" +
+        "Date of Entry: " + sessionStorage.dateIn
 
+        document.getElementById("info02").innerHTML = 
         "Adult - Door Pass: " + sessionStorage.numTickAduDoor + "<br>" +
         "Adult - Game Pass: " + sessionStorage.numTickAduGame + "<br>" +
         "Cost: $" + sessionStorage.toAdult + "<br><br>" +
@@ -72,8 +81,6 @@ function showInfo()
 
         "Total: $" + sessionStorage.total;
     }
-    else if(tick == 20140404)
-        document.getElementById("info").innerHTML = "Abdul";
     else
         document.getElementById("info").innerHTML = "Invalid Ticket Reference #";
 }
