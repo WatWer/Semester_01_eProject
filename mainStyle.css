@@ -7,6 +7,12 @@ body
 {
     position: relative
 }*/
+body{
+    height:100vh;
+    margin:0;
+    display:flex; 
+    flex-direction:column;
+}
 
 .carousel-inner img
 {
@@ -67,7 +73,60 @@ body
     border-bottom: solid 2px;
 }
 
+.notice
+{
+    border: 5px red double;
+    display: block;
+}
+
+.ticketOut
+{
+    margin: 15px;
+    position: relative;
+}
+
+.imgBlock
+{
+    display: block;
+    margin: auto;
+}
+
+.ticketIn01
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4vmin;
+}
+
+.ticketIn02
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vmax;
+}
+
 .row
 {
     padding-bottom: 2px;
+}
+
+footer
+{
+    background-color: black;
+    font-size: 1ex;
+    color: cornsilk;
+    margin-top: auto;
+    width: 100%;
+    
+}
+
+strong
+{
+    font: bold;
+    color: skyblue;
+    font-size: 3ex;
 }
