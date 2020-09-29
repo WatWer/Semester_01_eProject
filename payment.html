@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+
+
+<body class="container-fluid">
+
+  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand d-sm-none" href="#"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">Select</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Experiences
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="e_pj_dragonpark.html">Dragon Park</a>
+            <a class="dropdown-item" href="e_pj_waterpark.html">Water Park</a>
+            <a class="dropdown-item" href="e_pj_thrillinggames.html">Games / Rides</a>
+            <a class="dropdown-item" href="e_pj_attraction.html">Attractions</a>
+            <a class="dropdown-item" href="e_pj_restaurant.html">Dinings</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="map.html" id="navbardrop" data-toggle="dropdown">
+            Maps
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="siteMaps.html">Site Maps</a>
+            <a class="dropdown-item" href="geoLocation.html">Location</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Tickets
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="purchase.html">Purchase</a>
+            <a class="dropdown-item" href="check.html">Ticket Info</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            FAQs
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="faqs.html">FAQs</a>
+            <a class="dropdown-item" href="notice.html">Notice</a>
+            <a class="dropdown-item" href="aboutUs.html">About Us</a>
+            <a class="dropdown-item" href="policies.html">Policies</a>            
+          </div>
+        </li>   
+      </ul>
+    </div>  
+  </nav>
+  <br>
+
+
+
+  <div class="row">
+    <div class="col-1 col-sm-3"></div>
+
+    <div class="col-10 col-sm-6 formBorder">
+      <form action="recheck.html" onsubmit="cardName()">
+
+        <div class="row">
+          <div class="col-12 formHead">Payment</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12">Payment Method:</div>
+        </div>
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+                <input type="radio" name="pay" value="VISA" required> <img src="visa.jpg" alt="" width="40" height="25"></input>&nbsp&nbsp&nbsp 
+                <input type="radio" name="pay" value="MasterCard" required> <img src="mastercard.jpg" alt="" width="40" height="25"></input>&nbsp&nbsp&nbsp
+                <input type="radio" name="pay" value="PayPal" required><img src="paypal.jpg" alt="" width="60" height="25"></input>&nbsp&nbsp&nbsp
+          </div>
+        </div> <br>
+
+        <div class="row">
+          <div class="col-6 col-md-5">Name on Card:</div>
+          <input type="text" class="col-6 col-md-7" placeholder="Printed on Card" required>
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-md-5">Card Number:</div>
+          <input type="text" id="cardNum" class="col-6 col-md-7" placeholder="ex. 1234-1234-1234-1234" required pattern="[\d*]{4}-[\d*]{4}-[\d*]{4}-[\d*]{4}">
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-md-5">PIN:</div>
+          <input type="text" class="col-6 col-md-7" placeholder="ex. 123" pattern="[\d*]{3}">   
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-md-5">Expiration Date:</div>       
+          <input type="text" id="cardExpire" class="col-6 col-md-7" placeholder="MM/YY" pattern="[\d*]{2}/[\d*]{2}">
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-md-5">Postal Code:</div>
+          <input type="text" class="col-6 col-md-7" placeholder="ex. 700000">  
+        </div>
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;"><button type="submit">Submit</button></div> <br>
+        </div>
+      </form>
+    </div>
+    <div class="col-1 col-sm-3"></div>
+  </div>
+
+  <footer>
+    <div class="row" style="padding: 10px;">
+      <div class="col-sm-1"></div>
+      <div class="col-12 col-sm-8"> <br>
+        3 HOA BINH St, WARD 3, TAN BINH District, HO CHI MINH City <br> <br>
+
+        Contact Us: <br>
+        Phone: 028.38588418 - Fax: 028.38588419 <br> <br>
+
+        Stay Connected: 
+        <a href="gallery.html"><img src="facebook.png" alt="facebook" width="35"></a>
+        <a href="gallery.html"><img src="twitter.png" alt="twitter" width="35"></a>
+        <a href="gallery.html"><img src="youtube.png" alt="youtube" width="35"></a>
+        <a href="gallery.html"><img src="reddit.png" alt="reddit" width="35"></a>
+        <a href="gallery.html"><img src="wechat.png" alt="wechat" width="35"></a>
+      </div>
+           
+      <div class="col-sm-3"> <br>
+        <a href="policy.html">Park's Policy</a> <br> <br>
+        <a href="feedback.html" class="feedback">Feedback</a> <br> <br> <br>
+
+        Made by Team 01 FptAptechT12006M1
+      </div>
+    </div>
+
+    <div style="text-align: center;">&copy; Merciado 2020. All Rights Reserved</div> 
+  </footer>
+
+
+    <script src="mainJS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
