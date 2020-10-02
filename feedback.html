@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check</title>
+    <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="mainStyle.css">
 </head>
@@ -78,30 +78,27 @@
   <br>
 
   <div class="row">
-    <div class="col-1 col-sm-3"></div>
-    <div class="col-10 col-sm-6 formBorder">
-      <div class="row">
-        <div class="col-12 formHead">Ticket Info</div>
-      </div> <br>
+      <div class="col-1"></div>
+      <div class="col-10">
+        <form onsubmit="feedback()">
+          <div class="topText">Feedback</div>
+          <div class="headText">Please provide your feedback:</div>
+          <div style="width: 30%;">Email:</div>
+          <input type="text" required pattern="^\w+@\w+\.\w+$" placeholder="aaa@aaa.aaa" style="width: 70%;"> <br>
 
-      <div class="row">
-        <div class="col-5">Booking Ref#:</div>
-        <input type="text" id="ticket" placeholder="ex. 20201234" class="col-7">
-      </div> <br>
+          <div style="width: 30%;">Comment:</div>
+          <textarea name="" id="" cols="30" rows="10"  style="width: 70%;" required></textarea><br>
 
-      <div class="row">
-        <div class="col-12" style="text-align: center;"><button onclick="showInfo()">Check</button></div>
-      </div> <br>
-      
-      <div class="row">
-        <div class="col-6"><div id="info01"></div></div>
-        <div class="col-6"><div id="info02"></div></div>       
+          <div style="text-align: center;"><button>Submit</button></div>
+        </form>
       </div>
-      
-    </div>
-    <div class="col-1 col-sm-3"></div>
+      <div class="col-1"></div>
   </div>
-  
+
+
+
+
+
   <footer>
     <div class="row" style="padding: 10px;">
       <div class="col-sm-1"></div>
