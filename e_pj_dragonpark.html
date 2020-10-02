@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="e_pj.css">
+    <title>DRAGON PARK</title>
+</head>
+<body>
+    <div class="container-fluid ">
+        <!-- header  -->
+        <div > <!--mx-auto là canh giữa-->
+          <img src="e_header.jpg" class="img-responsive w-100"> <!-- Độ rộng là w-100%-->
+        </div>
+        <!-- Navigagion bar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">MERCIADO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
+                <ul class="navbar-nav mr-auto" style="width: 80%; text-align: center;">
+                    <li class="nav-item active" style="width:15%">
+                        <a class="nav-link" href="index.html" >HOME <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 20%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EXPERIENCES
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="e_pj_dragonpark.html" style="font-weight:bold">DRAGON PARK</a>
+                            <a class="dropdown-item" href="e_pj_waterpark.html" style="font-weight:bold">WATER PARK</a>
+                            <a class="dropdown-item" href="e_pj_thrillinggames.html" style="font-weight:bold">THRILLING GAMES</a>
+                            <a class="dropdown-item" href="e_pj_attraction.html" style="font-weight:bold">ATTRACTIONS</a>
+                            <a class="dropdown-item" href="e_pj_restaurant.html" style="font-weight:bold">RESTAURANTS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 15%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MAPs
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="siteMaps.html" style="font-weight:bold">SITE MAPs</a>
+                            <a class="dropdown-item" href="geoLocation.html" style="font-weight:bold">LOCATION</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 15%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TICKETS
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="purchase.html" style="font-weight:bold">PURCHASE</a>
+                            <a class="dropdown-item" href="check.html" style="font-weight:bold">TICKET INFO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active" style="width: 15%; text-align: center;">
+                        <a class="nav-link" href="gallery.html"style="color:white;">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 10%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="faqs.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FAQs
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="notice.html" style="font-weight:bold">NOTICE</a>
+                            <a class="dropdown-item" href="aboutUs.html" style="font-weight:bold">ABOUT US</a>
+                            <a class="dropdown-item" href="policies.html" style="font-weight:bold">POLICIES</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav justify-content-end" style="width: 20%" >
+                <li class="nav-item" >
+                    <a class="nav-link" href="e_pj_login.html" style="color:white" >
+                    Sign up
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="e_pj_login.html" style="color:white">
+                    Login 
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- <div class="carousel-inner row w-100 mx-auto" role="listbox"> -->
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-inner row w-500 mx-auto" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="e_dragon.jpg" class="img-fluid mx-auto d-block" alt="Slide1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="e_dragon1.jpg" class="img-fluid mx-auto d-block" alt="Slide2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="e_dragon2.jpg" class="img-fluid mx-auto d-block" alt="Slide3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="e_dragon3.jpg" class="img-fluid mx-auto d-block" alt="Slide4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="e_dragon4.jpg" class="img-fluid mx-auto d-block" alt="Slide5">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="e_dragon5.jpg" class="img-fluid mx-auto d-block" alt="Slide6">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="e_dragon6.jpg" class="img-fluid mx-auto d-block" alt="Slide7">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="e_dragon7.jpg" class="img-fluid mx-auto d-block" alt="Slide8">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="e_dragon9.jpg" class="img-fluid mx-auto d-block" alt="Slide9">
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <h2>DRAGON PARK FANTASTIC!</h2>
+        <p >Dragon Park offers a magical world with rides inspired by well-known fairytales. 
+            Children can also join mini tours to explore the Dragon Park tour. 
+            <div id="demo" class="collapse" style="font-size: 20px">
+            The highlight of the theme park is the Phi Long Than Toc rollercoaster – the longest in Asia at a length of 1.1 kilometres .
+                There are many bus throught througt dinosaurs park . All rides have been imported from Europe.
+                With more than 100,000 flowers and plants and 10,000 trees, Dragon Park will also attract tourists due to its scenery and diverse high quality restaurants.
+            </div>
+        </p>
+        <button type="button" class="btn btn-outline-dark " style="margin-left: 100px;" data-toggle="collapse" data-target="#demo">VIEW DETAIL</button>
+      </div>
+       <!-- comment box  -->
+      <div class="container-fluid"  >
+        <form onsubmit="showInfo()">
+            <div class="form-row mx-auto d-block" style="width: 40%;">
+                <div class="col">
+                    <input type="text" class="align-middle" style="width:100%;" id="name" placeholder="Enter your name" name="name">
+                </div>
+                <div class="col">
+                    <input type="text" class="align-middle" style="width:100%;" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="col">
+                    <input type="text" class="align-middle" style="width:100%;height: 100px; text-align: justify;" placeholder="Enter comment" name="comment">
+                </div>
+                <button style="background-color: #2f4357" class="mx-auto d-block" >Submit</button>
+            </div>
+          </form>
+      </div>
+    <br>
+        <!-- footer  -->
+    <div class="container-fluid ">
+        <div style="color: white; background: #2f4357">
+            <div class="row" >
+                <div class="col-sm-1"></div>
+                <div class="col-12 col-sm-8"> <br>
+                    590 Cách Mạng Tháng Tám, Quận 3 - FPT Aptech <br>
+                    Contact Us: Ngoc Yen (Student 1270126) <br>
+                    Phone: +(84)944551900  - 
+                    <a href="mailto:ngcyen.ptit@gmail.com">&#9993;</a>Email: ngcyen.ptit@gmail.com<br>
+                    Stay Connected: 
+                    <a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook" width="35"></a>
+                    <a href="https://twitter.com/?lang=vi"><img src="twitter.png" alt="twitter" width="35"></a>
+                    <a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube" width="35"></a>
+                    <a href="https://www.reddit.com/"><img src="reddit.png" alt="reddit" width="35"></a>
+                    <a href="https://www.wechat.com/vi/"><img src="wechat.png" alt="wechat" width="35"></a>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <a href="policy.html" style="color: white;">Park's Policy</a><br>
+                    <a href="feedback.html" style="color: white;">Feedback</a><br>
+                    <a href="websiteMap.html" style="color: white;">SiteMap</a><br>
+                        Made by Team 01 FptAptechT12006M1
+                </div>
+            </div>  
+            <div style="text-align: center; ">&copy; Merciado 2020. All Rights Reserved</div> 
+            <br>
+        </div>
+    </div>
+    <!-- script  -->
+    <script>
+      function showInfo()
+        {
+            var comment=$("#comment").val(); //dùng dấu $ là hàm val giống trong jquery là value, value trong Jquery là val
+            alert("Thanks for for view about Dragon park at The Merciado. Hope you have a great day !");
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="e_pj.css">
+    <script src="e_pj.js"></script>
+    <style>
+        .table, .required-input{
+            color: darkgreen;
+            font-size: 18px;
+        }
+        span, input, textarea{
+            font-size: 18px;
+            color: darkgreen;
+        }
+       
+
+    </style>
+    
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="container-fluid ">
+        <!-- header  -->
+        <div > <!--mx-auto là canh giữa-->
+            <img src="e_header.jpg" class="img-responsive w-100"> <!-- Độ rộng là w-100%-->
+          </div>
+          <!-- Navigagion bar  -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+              <a class="navbar-brand" href="index.html">MERCIADO</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
+                <ul class="navbar-nav mr-auto" style="width: 80%; text-align: center;">
+                    <li class="nav-item active" style="width:15%">
+                        <a class="nav-link" href="index.html" >HOME <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 20%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EXPERIENCES
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="e_pj_dragonpark.html" style="font-weight:bold">DRAGON PARK</a>
+                            <a class="dropdown-item" href="e_pj_waterpark.html" style="font-weight:bold">WATER PARK</a>
+                            <a class="dropdown-item" href="e_pj_thrillinggames.html" style="font-weight:bold">THRILLING GAMES</a>
+                            <a class="dropdown-item" href="e_pj_attraction.html" style="font-weight:bold">ATTRACTIONS</a>
+                            <a class="dropdown-item" href="e_pj_restaurant.html" style="font-weight:bold">RESTAURANTS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 15%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MAPs
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="siteMaps.html" style="font-weight:bold">SITE MAPs</a>
+                            <a class="dropdown-item" href="geoLocation.html" style="font-weight:bold">LOCATION</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 15%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TICKETS
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="purchase.html" style="font-weight:bold">PURCHASE</a>
+                            <a class="dropdown-item" href="check.html" style="font-weight:bold">TICKET INFO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active" style="width: 15%; text-align: center;">
+                        <a class="nav-link" href="gallery.html"style="color:white;">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 10%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="faqs.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FAQs
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="notice.html" style="font-weight:bold">NOTICE</a>
+                            <a class="dropdown-item" href="aboutUs.html" style="font-weight:bold">ABOUT US</a>
+                            <a class="dropdown-item" href="policies.html" style="font-weight:bold">POLICIES</a>
+                        </div>
+                    </li>
+                </ul>
+                  <ul class="nav navbar-nav justify-content-end" style="width: 20%" >
+                  <li class="nav-item" >
+                      <a class="nav-link" href="e_pj_login.html" style="color:white" >
+                      Sign up
+                      </a>
+                  </li>
+                  <li class="nav-item" >
+                      <a class="nav-link" href="e_pj_login.html" style="color:white">
+                      Login 
+                      </a>
+                  </li>
+                  </ul>
+              </div>
+          </nav>
+        <!-- register form  -->
+        <form onsubmit="showAlert()">
+
+            <div class="table" style="border-bottom: hidden;">
+                <div class="table-cell-header" > <h1 style="font-size: 20px;">REGISTER TO LOGIN INFOMATIONS </h1></div>
+            </div>
+    
+            <div class="table" style="border-top: hidden; border-bottom: hidden;">
+                <div class="table-row">
+                    <div class="table-cell-left">Email (ID)</div>
+                    <div class="table-cell-right">
+                        <input type="text" id="id" class="required-input " placeholder="Input your ID" required ><span></span></input>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-cell-left">Password</div>
+                    <div class="table-cell-right">
+                        <input type="text" id="password" class="required-input " placeholder="Set password" required >
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-cell-left">Gender</div>
+                    <div class="table-cell-right" id="sex" >
+                        <input type="radio" name="gender" value="Male"> <span>Male</span> </input>
+                        <input type="radio" name="gender" value="Female"> <span> Female</span> </input>
+                    </div>
+                </div>
+    
+                <div class="table-row">
+                    <div class="table-cell-left">Hobbies</div>
+                    <div class="table-cell-right" id="hob">
+                        <input type="checkbox" name="hobbies" value="Shopping"> <span>Shopping</span> </input>
+                        <input type="checkbox" name="hobbies" value="Eating out"> <span>Eating out</span> </input>
+                        <input type="checkbox" name="hobbies" value="Sporting"><span>Sporting</span>  </input>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell-left">Date of birthday</div>
+                    <div class="table-cell-right" >
+                        <input type="date" id="birthday" value="birthday">  </input>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell-left">Address</div>
+                    <div class="table-cell-right">
+                        <input type="text" id="address" class="required-input" required></input>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell-left" style="vertical-align: top;">Comment</div>
+                    <div class="table-cell-right">
+                        <textarea type="comment" id="comment" style="width:95%" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="table" style="border-top: hidden; text-align: center;">
+                <button onclick="submit" class="bg-success" style="font-size: 15px;">Submit</button>
+                <button name='reset' type="reset" value='Reset' class="bg-warning" style="font-size: 15px;">Reset</button>
+            </div>
+        </form>
+    </div>
+
+        <!-- footer  -->
+    <div class="container-fluid ">
+        <div style="color: white" class="bg-success">
+            <div class="row" >
+                <div class="col-sm-1"></div>
+                <div class="col-12 col-sm-8"> <br>
+                    590 Cách Mạng Tháng Tám, Quận 3 - FPT Aptech <br>
+                    Contact Us: Ngoc Yen (Student 1270126) <br>
+                    Phone: +(84)944551900  - 
+                    <a href="mailto:ngcyen.ptit@gmail.com">&#9993;</a>Email: ngcyen.ptit@gmail.com<br>
+                    Stay Connected: 
+                    <a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook" width="35"></a>
+                    <a href="https://twitter.com/?lang=vi"><img src="twitter.png" alt="twitter" width="35"></a>
+                    <a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube" width="35"></a>
+                    <a href="https://www.reddit.com/"><img src="reddit.png" alt="reddit" width="35"></a>
+                    <a href="https://www.wechat.com/vi/"><img src="wechat.png" alt="wechat" width="35"></a>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <a href="policy.html" style="color: white;">Park's Policy</a><br>
+                    <a href="feedback.html" style="color: white;">Feedback</a><br>
+                    <a href="websiteMap.html" style="color: white;">SiteMap</a><br>
+                        Made by Team 01 FptAptechT12006M1
+                </div>
+            </div>  
+            <div style="text-align: center; ">&copy; Merciado 2020. All Rights Reserved</div> 
+            <br>
+        </div>
+    </div>
+</html>

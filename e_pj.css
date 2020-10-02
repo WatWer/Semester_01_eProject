@@ -1,0 +1,78 @@
+.carousel{
+        background: #2f4357;
+        margin-top: 20px;
+    }
+.carousel-item{
+        text-align: center;
+        min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    }
+h2{
+        color:blue;
+        font-weight: bold;
+        text-align: center;
+    }
+body {
+    position: relative;
+    }
+ul.nav-pills {
+    top: 20px;
+    position: fixed;
+    }
+p{
+    font-size: 20px;
+    text-indent: 50px;
+    text-align: justify;
+}
+nav{
+    font-weight: bold;
+}
+/* css for register / login  */
+.table{
+    border:double 3px grey;
+    font-size: large;
+    color:black;
+    width: 40%;
+    height: 40%;
+    display: table;
+    /* font-weight: bold; */
+    margin: 0 auto;
+    font-size: 12px;
+}
+.table-cell-header
+{
+    color: white;
+    background-color: green;
+    overflow: hidden;
+    padding: 10px 0px;
+    font-weight: lighter;
+    text-align: center;
+}
+.table-row{
+    display: table-row;
+}
+
+.table-cell-left
+{
+    display: table-cell;
+    padding: 15px;
+    width: 30%;
+    text-align: left;   
+}
+
+.table-cell-right
+{
+    display: table-cell;
+    padding: 5px;
+    width: 70%;
+    text-align: left;
+    font-size: 12px;
+
+}
+
+.required-input
+{
+    color: blue;
+    width: 95%;
+    font-size: 12px;
+    border: solid 1px red;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>RESTAURANT</title>
+    <style>
+        .carousel{
+            margin-top: 10px;
+        }
+        .carousel-item{
+            text-align: center;
+            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+        }
+        h2{
+            color:blue;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            text-indent: 50px;
+        }
+        .navbar{
+            margin-bottom: 50px;
+            border-radius: 2px;
+        }
+        /* a{
+            color:white;
+        } */
+        h2{
+            text-align: center; 
+            color: blue;
+        }
+        .logo{
+            
+            float:left; margin-left: 40px; margin-top: 15px;
+            /* class:"img-responsive" */
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="container-fluid">
+        <!-- header  -->
+        <div > <!--mx-auto là canh giữa-->
+            <img src="e_header.jpg" class="img-responsive w-100"> <!-- Độ rộng là w-100%-->
+        </div>
+        <!-- Navigagion bar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
+            <a class="navbar-brand" href="index.html">MERCIADO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
+                <ul class="navbar-nav mr-auto" style="width: 80%; text-align: center;">
+                    <li class="nav-item active" style="width:15%">
+                        <a class="nav-link" href="index.html" >HOME <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 20%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EXPERIENCES
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="e_pj_dragonpark.html" style="font-weight:bold">DRAGON PARK</a>
+                            <a class="dropdown-item" href="e_pj_waterpark.html" style="font-weight:bold">WATER PARK</a>
+                            <a class="dropdown-item" href="e_pj_thrillinggames.html" style="font-weight:bold">THRILLING GAMES</a>
+                            <a class="dropdown-item" href="e_pj_attraction.html" style="font-weight:bold">ATTRACTIONS</a>
+                            <a class="dropdown-item" href="e_pj_restaurant.html" style="font-weight:bold">RESTAURANTS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 15%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MAPs
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="siteMaps.html" style="font-weight:bold">SITE MAPs</a>
+                            <a class="dropdown-item" href="geoLocation.html" style="font-weight:bold">LOCATION</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 15%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="e_pj_experience.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TICKETS
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="purchase.html" style="font-weight:bold">PURCHASE</a>
+                            <a class="dropdown-item" href="check.html" style="font-weight:bold">TICKET INFO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active" style="width: 15%; text-align: center;">
+                        <a class="nav-link" href="gallery.html"style="color:white;">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown active" style="width: 10%; text-align: center;">
+                        <a class="nav-link dropdown-toggle" href="faqs.html" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FAQs
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="notice.html" style="font-weight:bold">NOTICE</a>
+                            <a class="dropdown-item" href="aboutUs.html" style="font-weight:bold">ABOUT US</a>
+                            <a class="dropdown-item" href="policies.html" style="font-weight:bold">POLICIES</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav justify-content-end" style="width: 20%" >
+                    <li class="nav-item">
+                    <a class="nav-link" href="e_pj_login.html" style="color:white" >
+                        Sign up
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="e_pj_login.html" style="color:white">
+                        Login 
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr style="background-color: white;">
+        <!-- header -->
+        <!-- <header style="height: 100px; padding:25px; text-align: center;" class="embed-responsive">
+            <h2 style="color: burlywood;">RESTAURANT FOR YOUR JOY !</h2>
+        </header> -->
+        <div class="row " >
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="e_pj_restaurant.html"style="color:burlywood; font-weight: bold;">RESTAURANT</a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="e_pj_rest_menu.html " style="color:burlywood; font-weight: bold;" id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MENU 
+                        </a>
+                        <div class="dropdown-menu"  aria-labelledby="navbarDropdownXL" style="background-color:black;color:burlywood">
+                            <a class="dropdown-item" href="e_pj_rest_menu.html#breakfast" style="font-weight:bold;color:burlywood">BREAKFAST</a>
+                            <a class="dropdown-item" href="e_pj_rest_menu.html#lunch" style="font-weight:bold;color:burlywood">LUNCH</a>
+                            <a class="dropdown-item" href="e_pj_rest_menu.html#buffet" style="font-weight:bold;color:burlywood">BUFFET</a>
+                            <a class="dropdown-item" href="e_pj_rest_menu.html#cafe" style="font-weight:bold;color:burlywood">CAFE</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#"style="color:burlywood; font-weight:bold;">PROMOTION</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="e_pj_rest_menu.html#event"style="width: 15%; color:burlywood; font-weight: bold;">EVENT</a>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+        </div>
+            </div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active" style="color: brown;">dfsf</li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-inner row w-500 mx-auto" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="e_restaurant0.jpg" class="img-fluid mx-auto d-block" alt="Slide1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="e_restaurant1.jpg" class="img-fluid mx-auto d-block" alt="Slide2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="e_restaurant2.jpg" class="img-fluid mx-auto d-block" alt="Slide3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="e_restaurant7.jpg" class="img-fluid mx-auto d-block" alt="Slide4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="e_restaurant4.jpg" class="img-fluid mx-auto d-block" alt="Slide5">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="e_restaurant5.jpg" class="img-fluid mx-auto d-block" alt="Slide6">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="e_restaurant6.jpg" class="img-fluid mx-auto d-block" alt="Slide7">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="e_restaurant7.jpg" class="img-fluid mx-auto d-block" alt="Slide8">
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4" >
+                <div>
+                    <img src="e_restaurant8_1.jpg" alt="ads1" class="img-responsive" width="100%" height="100%" >
+                    <img src="e_restaurant8_2.jpg" alt="ads2" class="img-responsive" width="100%" height="100%" >
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="panel" >
+                            <div class="panel-heading" style="color: burlywood; text-align:center;">DISH 001  </div>
+                            <div class="panel-body "><img src="e_restaurant_menu1.jpg" usemap="#menu1" alt="menu1" class="img-responsive mx-auto d-block" width="200px" height="150px"> </div>
+                                <map name="menu1">
+                                    <area shape="rect" coords="0,0,200,150" alt="menu1" href="e_restaurant_menu1.jpg">
+                                </map>
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading" style="color: burlywood; text-align: center;"> DISH 002 </div>
+                            <div class="panel-body"><img src="e_restaurant_menu2.jpg" usemap="#menu2" alt="menu2" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                            <map name="menu2">
+                                <area shape="rect" coords="0,0,200,150" alt="menu2" href="e_restaurant_menu2.jpg">
+                            </map>                            
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading" style="color: burlywood; text-align: center;"> DISH 003 </div>
+                            <div class="panel-body"><img src="e_restaurant_menu2.jpg" usemap="#menu3" alt="menu3" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                            <map name="menu3">
+                                <area shape="rect" coords="0,0,200,150" alt="menu3" href="e_restaurant_menu2.jpg">
+                            </map>                           
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                        <div class="panel" >
+                            <div class="panel-heading" style="color: burlywood; text-align:center;">DISH 013  </div>
+                            <div class="panel-body "><img src="e_restaurant_menu1.jpg" usemap="#menu13" alt="menu13" class="img-responsive mx-auto d-block" width="200px" height="150px"> </div>
+                            <map name="menu13">
+                                <area shape="rect" coords="0,0,200,150" alt="menu13" href="e_restaurant_menu1.jpg">
+                            </map>
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="panel ">
+                            <div class="panel-heading"style="color: burlywood; text-align: center;"> DISH 004 </div>
+                            <div class="panel-body"><img src="e_restaurant_menu4.jpg" usemap="#menu4" alt="menu4" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                            <map name="menu4">
+                                <area shape="rect" coords="0,0,200,150" alt="menu4" href="e_restaurant_menu4.jpg">
+                            </map>
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                        <div class="panel ">
+                            <div class="panel-heading"style="color: burlywood; text-align: center;"> DISH 005 </div>
+                            <div class="panel-body"><img src="e_restaurant_menu5.jpg" usemap="#menu5" alt="menu5" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                            <map name="menu5">
+                                <area shape="rect" coords="0,0,200,150" alt="menu5" href="e_restaurant_menu5.jpg">
+                            </map>
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                        <div class="panel ">
+                            <div class="panel-heading"style="color: burlywood; text-align: center;"> DISH 006 </div>
+                            <div class="panel-body"><img src="e_restaurant_menu6.jpg" usemap="#menu6" alt="menu6" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                            <map name="menu6">
+                                <area shape="rect" coords="0,0,200,150" alt="menu6" href="e_restaurant_menu6.jpg">
+                            </map>
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                        <div class="panel" >
+                            <div class="panel-heading" style="color: burlywood; text-align:center;">DISH 014  </div>
+                            <div class="panel-body "><img src="e_restaurant_menu1.jpg" usemap="#menu14" alt="menu14" class="img-responsive mx-auto d-block" width="200px" height="150px"> </div>
+                            <map name="menu14">
+                                <area shape="rect" coords="0,0,200,150" alt="menu14" href="e_restaurant_menu1.jpg">
+                            </map>
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-12">
+                        <div class="panel ">
+                            <div class="panel-heading"style="color: burlywood; text-align: center;"> DISH 007 </div>
+                            <div class="panel-body"><img src="e_restaurant_menu7.jpg" usemap="#menu7" alt="menu7" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                            <map name="menu7">
+                                <area shape="rect" coords="0,0,200,150" alt="menu7" href="e_restaurant_menu7.jpg">
+                            </map> 
+                            <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                        </div>
+                            <div class="panel ">
+                                <div class="panel-heading"style="color: burlywood; text-align: center;"> DISH 008 </div>
+                                <div class="panel-body"><img src="e_restaurant_menu8.jpg" usemap="#menu8" alt="menu8" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                                <map name="menu8">
+                                    <area shape="rect" coords="0,0,200,150" alt="menu8" href="e_restaurant_menu8.jpg">
+                                </map>
+                                <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                            </div>
+                            <div class="panel ">
+                                <div class="panel-heading"style="color: burlywood; text-align: center;"> DISH 009 </div>
+                                <div class="panel-body"><img src="e_restaurant_menu9.jpg" usemap="#menu9" alt="menu9" class="img-responsive mx-auto d-block" width="200px" height="150px" > </div>
+                                <map name="menu9">
+                                    <area shape="rect" coords="0,0,200,150" alt="menu9" href="e_restaurant_menu9.jpg">
+                                </map>
+                                <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                            </div>
+                            <div class="panel" >
+                                <div class="panel-heading" style="color: burlywood; text-align:center;">DISH 015  </div>
+                                <div class="panel-body "><img src="e_restaurant_menu1.jpg" usemap="#menu15" alt="menu15" class="img-responsive mx-auto d-block" width="200px" height="150px"> </div>
+                                <map name="menu15">
+                                    <area shape="rect" coords="0,0,200,150" alt="menu15" href="e_restaurant_menu1.jpg">
+                                </map>
+                                <div class="panel-footer" style="text-align: center;"><span style="color:blue">$200.000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer  -->
+  <hr style="background-color: white;">
+  <div class="container-fluid ">
+    <div class="bg-black" style="color: white;">
+        <div class="row" >
+            <div class="col-sm-1"></div>
+            <div class="col-12 col-sm-8"> <br>
+                590 Cách Mạng Tháng Tám, Quận 3 - FPT Aptech <br>
+                Contact Us: Ngoc Yen (Student 1270126) <br>
+                Phone: +(84)944551900  - 
+                <a href="mailto:ngcyen.ptit@gmail.com">&#9993;</a>Email: ngcyen.ptit@gmail.com<br>
+                Stay Connected: 
+                <a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook" width="35"></a>
+                <a href="https://twitter.com/?lang=vi"><img src="twitter.png" alt="twitter" width="35"></a>
+                <a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube" width="35"></a>
+                <a href="https://www.reddit.com/"><img src="reddit.png" alt="reddit" width="35"></a>
+                <a href="https://www.wechat.com/vi/"><img src="wechat.png" alt="wechat" width="35"></a>
+            </div>
+            <div class="col-sm-3">
+                <br>
+                <a href="policy.html" style="color: white;">Park's Policy</a><br>
+                <a href="feedback.html" style="color: white;">Feedback</a><br>
+                <a href="websiteMap.html" style="color: white;">SiteMap</a><br>
+                    Made by Team 01 FptAptechT12006M1
+            </div>
+        </div>  
+        <div style="text-align: center; ">&copy; Merciado 2020. All Rights Reserved</div> 
+        <br>
+    </div>
+</div>
+</body>
+</html>
