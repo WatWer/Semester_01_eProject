@@ -15,6 +15,11 @@ body{
     color: whitesmoke;
 }
 
+.carousel-caption
+{
+    color: orangered;
+}
+
 .carousel-inner img
 {
     width: 100%;
@@ -42,7 +47,6 @@ body{
 
 .bodyBanner
 {
-    border: solid 2px blue;
     margin: 15px 0px 0px;
     position: relative;
     text-align: center;
@@ -51,9 +55,12 @@ body{
 
 .bannerText{
   position: absolute;
-  top: 67%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: red;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 .formHead
@@ -130,4 +137,43 @@ strong
     font: bold;
     color: skyblue;
     font-size: 3ex;
+}
+
+.topText
+{
+    text-align: center;
+    color: orange;
+    font-size: 3ex;
+    font-weight: bold;
+}
+
+.headText
+{
+    font-size: 3vh;
+    font-weight: bold;
+    color: mediumturquoise;
+}
+
+.headText02
+{
+    font-size: 3vh;
+    font-weight: bold;
+    color: red;
+}
+
+.bodyText
+{
+    font-size: 2.5vh;
+    padding-left: 10px;
+}
+
+iframe
+{
+    width: 100%;
+}
+
+.noticeBoard
+{
+    border: double darkblue 3px;
+    padding: 5px
 }
