@@ -91,3 +91,8 @@ function ticketGenerate02()
 
     sessionStorage.ticketCode = Math.floor((Math.random() * 9999) + 20200000);
 }
+
+function feedback()
+{
+    alert("Thank you for your feedback");
+}
