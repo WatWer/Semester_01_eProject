@@ -48,21 +48,23 @@
     font-weight: bold;
 }
 
-body{
+html, body
+{
+    overflow-x: hidden;
+}
+
+body
+{
+    position: relative;
     height:100vh;
     margin:0;
     display:flex; 
     flex-direction:column;
 }
 
-.dropdown-menu
+.navbar-brand
 {
-    background-color: black;
-}
-
-.dropdown-item
-{
-    color: whitesmoke;
+    padding-left: 20px;
 }
 
 .carousel-inner img
