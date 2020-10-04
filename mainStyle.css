@@ -19,16 +19,6 @@ body{
     padding-left: 20px;
 }
 
-.dropdown-menu
-{
-    background-color: black;
-}
-
-.dropdown-item
-{
-    color: whitesmoke;
-}
-
 .carousel-caption
 {
     color: orangered;
